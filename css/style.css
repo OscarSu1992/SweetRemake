@@ -1,0 +1,192 @@
+.header {
+    max-width: 1024px;
+    margin: auto;
+    padding: 30px 42px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    width: 219px;
+    height: 40px;
+}
+
+.headerLogo img {
+    object-fit: cover;
+}
+
+.headerMenu {
+    display: flex;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #3F5D45;
+}
+
+.nav ul {
+    width: 215px;
+    padding-left: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font: normal normal 600 16px/16px PingFang TC;
+}
+
+.shoppingCart {
+    margin-left: 79px;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingCart img {
+    width: 24px;
+    height: 24px;
+}
+
+.mainVisual {
+    margin: 0 auto;
+    width: 940px;
+    height: 496px;
+}
+
+.mainVisual img {
+    width: 940px;
+    height: 496px;
+    object-fit: cover;
+}
+
+.mainSorting {
+    position: relative;
+    top: -89px;
+    margin: auto;
+    width: 780px;
+    display: flex;
+}
+
+.mainSortingGroup {
+    width: 260px;
+    height: 256px;
+}
+
+.group1 {
+    background-image: url("../img/mainSorting1.png");
+    object-fit: cover;
+}
+
+.group2 {
+    background-image: url("../img/mainSorting2.png");
+    object-fit: cover;
+}
+
+.group3 {
+    background-image: url("../img/mainSorting3.png");
+    object-fit: cover;
+}
+
+.blurCover {
+    width: 260px;
+    height: 256px;
+    background-color: #3F5D45;
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.mainSortingText {
+    height: 256px;
+    margin: 0;
+    font: normal normal 300 24px/260px PingFang TC;
+    color: #FFFFFF;
+    writing-mode: vertical-lr;
+    text-align: center;
+
+}
+
+.sectionStyle {
+    margin-top: -9px;
+    margin-bottom: 114px;
+    height: 420px;
+    background-color: #EAF0ED;
+}
+
+.section1, .section2, .section3 {
+    box-sizing: border-box;
+    display:flex;
+    margin: 0 auto;
+    padding-left: 42px;
+    padding-right: 42px;
+    width: 1024px;
+    height: 420px;
+}
+
+.sectionPic {
+    position: relative;
+    top: -20px;
+    margin: 0;
+    width: 460px;
+    height: 460px;
+}
+
+.sectionPic img {
+    width: 460px;
+    height: 460px;
+    object-fit: cover;
+}
+
+.sectionTitle1 {
+    margin-top: -20px;
+    width: 89px;
+    height: 307px;
+    order: 3;
+}
+
+.sectionText1 {
+    font: normal normal 300 16px/16px PingFang TC;
+    color: #8DA291;
+    margin: 70px 80px 70px 55px;
+    width: 256px;
+    height: 280px;
+    writing-mode: vertical-rl;
+    line-height: 37px;
+    text-align: left;
+    order: 2;
+    
+}
+
+.sectionPic1 {
+    
+    order: 1;
+}
+
+.sectionTitle2 {
+    margin-top: -20px;
+    width: 89px;
+    height: 303px;
+    order: 3;
+}
+
+.sectionText2 {
+    font: normal normal 300 16px/16px PingFang TC;
+    color: #8DA291;
+    margin: 65px 80px 75px 13px;
+    width: 256px;
+    height: 280px;
+    writing-mode: vertical-rl;
+    line-height: 37px;
+    text-align: left;
+    order: 1;
+}
+
+.sectionPic2 {
+    margin-left: 42px;
+    order: 3;
+}
+
+.sectionTitle3 {
+    margin: 0px auto 80px auto;
+    width: 89px;
+    height: 328px;
+}
+
