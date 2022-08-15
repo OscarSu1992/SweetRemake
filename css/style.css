@@ -61,8 +61,10 @@ a, a:link, a:visited {
     position: relative;
     top: -89px;
     margin: auto;
-    width: 780px;
+    width: 782px;
     display: flex;
+    justify-content: space-between;
+    background-color: white;
 }
 
 .mainSortingGroup {
@@ -88,8 +90,7 @@ a, a:link, a:visited {
 .blurCover {
     width: 260px;
     height: 256px;
-    background-color: #3F5D45;
-    opacity: 0.8;
+    
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -101,7 +102,8 @@ a, a:link, a:visited {
     color: #FFFFFF;
     writing-mode: vertical-lr;
     text-align: center;
-
+    background-color: #3F5D45;
+    opacity: 0.8;
 }
 
 .sectionStyle {
@@ -190,3 +192,236 @@ a, a:link, a:visited {
     height: 328px;
 }
 
+.todayPop {
+    margin: 0 auto;
+    width: 940px;
+    height: 434px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todayPopGroup {
+    width: 300px;
+    height: 434px;
+}
+
+.popPicStyle {
+    display:flex;
+    background-size: 100%;
+    object-fit: cover;
+    width: 300px;
+    height: 315px;
+}
+
+.todayPopPic1 {
+    background-image: url("../img/todayPop1.png");
+}
+
+.todayPopPic2 {
+    background-image: url("../img/todayPop2.png");
+}
+
+.todayPopPic3 {
+    background-image: url("../img/todayPop3.png");
+}
+
+.todayPopMark {
+    margin: 0px 0px 0px 20px;
+    width: 36px;
+    height: 107px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    background-color: #3F5D45;
+    font: normal normal 600 16px/20px PingFang TC;
+    color: #EAF0ED;
+    line-height: 36px;
+}
+
+.heart {
+    right: 0px;
+    margin-top: 19px;
+    margin-left: 202px;
+    width: 20px;
+    height: 18px;
+}
+
+.todayPopInfo {
+    display: flex;
+    width: 300px;
+    height: 56px;
+}
+
+.name {
+    display: flex;
+    border: 1px solid #EAF0ED;
+    width: 173px;
+}
+
+.name p {
+    margin: auto auto auto 33px; 
+    font: normal normal 300 20px/20px PingFang TC;
+    color: #3F5D45;
+}
+
+.price {
+    display: flex;
+    border: 1px solid #EAF0ED;
+    width: 127px;
+}
+
+.price p {
+    margin: auto auto auto 25px; 
+    font: normal normal 600 20px/24px PingFang TC;
+    color: #3F5D45;
+}
+
+.addToCart {
+    display: flex;
+    background: #EAF0ED;
+    width: 300px;
+    height: 65px;
+}
+
+.addToCart p {
+    margin: auto;
+    font: normal normal 600 24px/20px PingFang TC;
+    color: #3F5D45;
+}
+
+.greenFooter {
+    display: flex;
+    height: 116px;
+    background: #3F5D45;
+    margin-top: 60px;
+}
+
+.mailFooter {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+}
+
+.mailFooterLogo {
+    margin: auto 20px auto 122px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.mailFooter p {
+    margin: auto 124px auto 0px;
+    width: 216px;
+    height: 33px;
+    font: normal normal normal 24px/33px Helvetica Neue;
+    color: #EAF0ED;
+}
+
+.mailArea {
+    display: flex;
+    width: 380px;
+    height: 56px;
+}
+
+.inputArea {
+    background: #EAF0ED;
+    display: flex;
+    width: 316px;
+    height: 56px;
+}
+
+.inputArea img {
+    margin: auto 20px auto 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.input {
+    background: #EAF0ED;
+    width: 316px;
+    height: 56px;
+    border: none;
+    padding: 0px;
+    outline: none;
+}
+
+.go {
+    width: 64px;
+    height: 56px;
+    background: #FFE180;
+    display: flex;
+}
+
+.go img {
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.contactFooter {
+    display: flex;
+    height: 341px;
+    background: #EAF0ED;
+}
+
+.contact {
+    margin: auto;
+    padding: 30px 122px 30px 122px;
+    display: flex;
+    width: 1024px;
+    height: 341px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    margin-top: 9px;
+    width: 171px;
+    height: 27px;
+    object-fit: cover;
+}
+
+.contactText {
+    margin-top: 110px;
+    margin-bottom: 0px;
+    font: normal normal normal 16px/24px Helvetica Neue;
+    color: #3F5D45;
+}
+
+.contactText p {
+    margin: 0;
+}
+
+.socialIcon {
+    display:flex; 
+    margin-top: 30px;
+    width: 72px;
+    justify-content: space-between;   
+}
+
+.socialIcon img {
+    width: 32px;
+    height: 32px;    
+}
+
+.contactTitle {
+    width: 300px;
+    text-align: right;
+}
+
+.contactTitle img {
+    width: 59px;
+    height: 219px;
+    object-fit: cover;
+}
+
+.copyright {
+    height: 62px;
+}
+
+.copyright p {
+    margin: 0;
+    margin-top: 40px;
+    font: normal normal normal 16px/19px Times;
+    color: #3F5D45;
+    text-align: right;
+}
