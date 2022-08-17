@@ -1,3 +1,4 @@
+/*標題列 1024*/
 .header {
     max-width: 1024px;
     margin: auto;
@@ -5,6 +6,10 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+}
+
+.menuIcon {
+    display: none;
 }
 
 .headerLogo {
@@ -16,6 +21,40 @@
     object-fit: cover;
 }
 
+.headerLogo768 {
+    display: none;
+}
+ 
+/*標題列 768*/
+@media(max-width:768px) {
+    .header {
+        max-width: 375px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .menuIcon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .headerLogo {
+        width: 114px;
+        height: 18px;
+    }
+
+    .headerLogo1024 {
+        display: none;
+    }
+
+    .headerLogo768 {
+        display: inline;
+        width: 114px;
+        height: 18px;
+    }
+}
+
+/*標題選單 1024*/
 .headerMenu {
     display: flex;
 }
@@ -45,6 +84,18 @@ a, a:link, a:visited {
     height: 24px;
 }
 
+/*標題選單 768*/
+@media(max-width:768px) {
+    .nav {
+        display: none;
+    }
+
+    .shoppingCart {
+        margin: 0;
+    }
+}
+
+/*主視覺 1024*/
 .mainVisual {
     margin: 0 auto;
     width: 940px;
@@ -57,6 +108,22 @@ a, a:link, a:visited {
     object-fit: cover;
 }
 
+/*主視覺 768*/
+@media(max-width:768px) {
+    .mainVisual {
+        margin: 0 auto;
+        width: 375px;
+        height: 277px;
+    }
+    
+    .mainVisual img {
+        width: 375px;
+        height: 277px;
+        object-fit: cover;
+    }
+}
+
+/*主視覺區商品分類 1024*/
 .mainSorting {
     position: relative;
     top: -89px;
@@ -87,6 +154,24 @@ a, a:link, a:visited {
     object-fit: cover;
 }
 
+/*主視覺區商品分類 768*/
+@media(max-width:768px) {
+    .mainSorting {
+        position: static;
+        margin: auto;
+        width: 375px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .mainSortingGroup {
+        width: 124px;
+        height: 180px;
+    }
+}
+
+/*主視覺商品分類-模糊效果與文字 1024*/
 .blurCover {
     width: 260px;
     height: 256px;
@@ -106,6 +191,42 @@ a, a:link, a:visited {
     opacity: 0.8;
 }
 
+/*主視覺商品分類-模糊效果與文字 768*/
+@media(max-width:768px) {
+    .blurCover {
+        width: 124px;
+        height: 180px;
+    }
+
+    .mainSortingText {
+        height: 180px;
+        margin: 0;
+        font: normal normal 300 20px/124px PingFang TC;
+    }
+}
+
+/*主視覺商品分類-當前頁面 1024*/
+.active {
+    height: 256px;
+    margin: 0;
+    font: normal normal 600 24px/260px PingFang TC;
+    color: #3F5D45;
+    writing-mode: vertical-lr;
+    text-align: center;
+    background-color: #FFE180;
+    opacity: 0.8;
+}
+
+/*主視覺商品分類-當前頁面 768*/
+@media(max-width:768px) {
+    .active {
+        height: 180px;
+        font: normal normal 600 20px/124px PingFang TC;
+    }
+}
+
+
+/*主文章-全段落設定*/
 .sectionStyle {
     margin-top: -9px;
     margin-bottom: 114px;
@@ -137,6 +258,39 @@ a, a:link, a:visited {
     object-fit: cover;
 }
 
+@media(max-width:768px) {
+    .sectionStyle {
+        margin: auto;
+        height: 562px;
+    }
+
+    .section1, .section2, .section3 {
+        margin: auto;
+        padding: 0;
+        width: 375px;
+        height: 562px;
+        flex-direction: column;
+    }
+
+    .sectionPic {
+        position: static;
+        margin: 0 auto;
+        width: 375px;
+        height: 250px;
+    }
+    
+    .sectionPic img {
+        width: 375px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+/*段落1_1024*/
+.sectionTitle1_768 {
+    display: none;
+}
+
 .sectionTitle1 {
     margin-top: -20px;
     width: 89px;
@@ -153,15 +307,38 @@ a, a:link, a:visited {
     writing-mode: vertical-rl;
     line-height: 37px;
     text-align: left;
-    order: 2;
-    
+    order: 2; 
 }
 
 .sectionPic1 {
-    
     order: 1;
 }
 
+/*段落1_768*/
+@media(max-width:768px) {
+    .sectionTitle1_768 {
+        display: block;
+        width: 196px;
+        height: 60px;
+        margin: 30px auto;
+    }
+
+    .sectionTitle1 {
+        display: none;
+    }
+    
+    .sectionText1 {
+        font: normal normal 300 16px/32px PingFang TC;
+        color: #8DA291;
+        margin: 30px auto;
+        width: 315px;
+        height: 252px;
+        writing-mode: horizontal-tb;
+    }
+    
+}
+
+/*段落2*/
 .sectionTitle2 {
     margin-top: -20px;
     width: 89px;
@@ -186,12 +363,22 @@ a, a:link, a:visited {
     order: 3;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*段落3*/
 .sectionTitle3 {
     margin: 0px auto 80px auto;
     width: 89px;
     height: 328px;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*本日精選區*/
 .todayPop {
     margin: 0 auto;
     width: 940px;
@@ -288,6 +475,11 @@ a, a:link, a:visited {
     color: #3F5D45;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*結尾綠標區-左半邊*/
 .greenFooter {
     display: flex;
     height: 116px;
@@ -316,6 +508,11 @@ a, a:link, a:visited {
     color: #EAF0ED;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*結尾綠標區-右半邊*/
 .mailArea {
     display: flex;
     width: 380px;
@@ -357,6 +554,11 @@ a, a:link, a:visited {
     margin: auto;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*聯絡資訊*/
 .contactFooter {
     display: flex;
     height: 341px;
@@ -373,6 +575,11 @@ a, a:link, a:visited {
     justify-content: space-between;
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*聯絡資訊-左半邊*/
 .footerLogo {
     margin-top: 9px;
     width: 171px;
@@ -403,6 +610,11 @@ a, a:link, a:visited {
     height: 32px;    
 }
 
+@media(max-width:768px) {
+    
+}
+
+/*聯絡資訊-右半邊*/
 .contactTitle {
     width: 300px;
     text-align: right;
@@ -424,4 +636,8 @@ a, a:link, a:visited {
     font: normal normal normal 16px/19px Times;
     color: #3F5D45;
     text-align: right;
+}
+
+@media(max-width:768px) {
+    
 }
