@@ -265,6 +265,7 @@ a, a:link, a:visited {
     }
 
     .section1, .section2, .section3 {
+        display: flex;
         margin: auto;
         padding: 0;
         width: 375px;
@@ -338,7 +339,11 @@ a, a:link, a:visited {
     
 }
 
-/*段落2*/
+/*段落2_1024*/
+.sectionTitle2_768 {
+    display: none;
+}
+
 .sectionTitle2 {
     margin-top: -20px;
     width: 89px;
@@ -363,22 +368,67 @@ a, a:link, a:visited {
     order: 3;
 }
 
+/*段落2_768*/
 @media(max-width:768px) {
+    .sectionTitle2_768 {
+        display: block;
+        width: 196px;
+        height: 60px;
+        margin: 30px auto;
+    }
+
+    .sectionTitle2 {
+        display: none;
+    }
+
+    .sectionPic2 {
+        margin: 0 auto;
+        order: 1;
+    }
     
+    .sectionText2 {
+        font: normal normal 300 16px/32px PingFang TC;
+        color: #8DA291;
+        margin: 30px auto;
+        width: 315px;
+        height: 252px;
+        writing-mode: horizontal-tb;
+        order: 2;
+    }
 }
 
-/*段落3*/
+/*段落3_1024*/
+.sectionTitle3_768 {
+    display: none;
+}
+
 .sectionTitle3 {
     margin: 0px auto 80px auto;
     width: 89px;
     height: 328px;
 }
 
+/*段落3_768*/
 @media(max-width:768px) {
-    
+    .section3 {
+        height: 120px;
+    }
+    .sectionTitle3_1024 {
+        display: none;
+    }
+
+    .sectionTitle3_768 {
+        display: block;
+    }
+
+    .sectionTitle3 {
+        margin: 30px auto;;
+        width: 226px;
+        height: 60px;
+    }
 }
 
-/*本日精選區*/
+/*本日精選區 1024*/
 .todayPop {
     margin: 0 auto;
     width: 940px;
@@ -475,11 +525,27 @@ a, a:link, a:visited {
     color: #3F5D45;
 }
 
+/*本日精選區 1024*/
 @media(max-width:768px) {
-    
+    .todayPop {
+        margin: 0 auto;
+        width: unset;
+    }
+
+    .todayPopGroup {
+        width: 300px;
+        height: 434px;
+    }
+
+    .todayPopDisplay2, .todayPopDisplay3 {
+        display: none;
+    }   
+    .todayPopDisplay1 {
+        margin: 0px auto;
+    }
 }
 
-/*結尾綠標區-左半邊*/
+/*結尾綠標區-左半邊 1024*/
 .greenFooter {
     display: flex;
     height: 116px;
@@ -493,27 +559,46 @@ a, a:link, a:visited {
     margin: auto;
 }
 
+.mailLeft {
+    margin: auto 0px auto 122px;
+    display: flex;
+}
+
 .mailFooterLogo {
-    margin: auto 20px auto 122px;
+    margin: auto 20px auto 0;
     width: 40px;
     height: 40px;
-
 }
 
 .mailFooter p {
-    margin: auto 124px auto 0px;
+    margin: auto 0 auto 0px;
     width: 216px;
     height: 33px;
     font: normal normal normal 24px/33px Helvetica Neue;
     color: #EAF0ED;
 }
 
+/*結尾綠標區-左半邊 768*/
 @media(max-width:768px) {
-    
+    .greenFooter {
+        height: 186px;
+        margin: 34px auto 0 auto;
+    }
+
+    .mailFooter {
+        width: unset;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .mailLeft {
+        margin: 30px auto;   
+    }
 }
 
-/*結尾綠標區-右半邊*/
+/*結尾綠標區-右半邊 1024*/
 .mailArea {
+    margin: auto auto auto 122px;
     display: flex;
     width: 380px;
     height: 56px;
@@ -554,11 +639,14 @@ a, a:link, a:visited {
     margin: auto;
 }
 
+/*結尾綠標區-右半邊 768*/
 @media(max-width:768px) {
-    
+    .mailArea {
+       margin: 0 auto;
+    }
 }
 
-/*聯絡資訊*/
+/*聯絡資訊 1024*/
 .contactFooter {
     display: flex;
     height: 341px;
@@ -575,11 +663,17 @@ a, a:link, a:visited {
     justify-content: space-between;
 }
 
+/*聯絡資訊 768*/
 @media(max-width:768px) {
-    
+    .contact {
+        width: unset;
+        padding: unset;
+        margin: 0 auto;
+    }
+
 }
 
-/*聯絡資訊-左半邊*/
+/*聯絡資訊-左半邊 1024*/
 .footerLogo {
     margin-top: 9px;
     width: 171px;
@@ -610,11 +704,26 @@ a, a:link, a:visited {
     height: 32px;    
 }
 
+/*聯絡資訊-左半邊 768*/
 @media(max-width:768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .footerLogo {
+        margin: 39px 0 0 30px;
+    }
     
+    .contactText {
+        margin: 39px 0 0 30px;
+    }
+    
+    .socialIcon {
+        margin: 37px 0 0 30px; 
+    }
 }
 
-/*聯絡資訊-右半邊*/
+/*聯絡資訊-右半邊 1024*/
 .contactTitle {
     width: 300px;
     text-align: right;
@@ -638,6 +747,18 @@ a, a:link, a:visited {
     text-align: right;
 }
 
+/*聯絡資訊-右半邊 768*/
 @media(max-width:768px) {
-    
+    .contactTitle {
+        display: none;
+    }
+
+    .copyright {
+        margin: 23px auto auto 30px;
+    }
+
+    .copyright p {
+        margin: 0;
+        text-align: left;
+    }
 }
