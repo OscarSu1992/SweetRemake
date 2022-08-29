@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetRemake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/checkoutStyle.css">
+</head>
+<body>
+    <header>
+        <!--標題列-->
+        <div class="header">
+            <!--選單ICON-->
+            <div class="menuIcon">
+                <img class="menuIcon768" src="./img/icon/menu.png" alt="">
+            </div>
+            
+            <!--標題列LOGO-->
+            <div class="headerLogo">
+                <img class="headerLogo1024" src="./img/icon/headerLogo.png" alt="">
+                <img class="headerLogo768" src="./img/icon/headerLogo768.svg" alt="">
+            </div>
+
+            <!--標題列選單-->
+            <div class="headerMenu">
+                <!--NAV-->
+                <div class="nav">
+                    <ul>
+                        <li><a href="">首頁</a></li>
+                        <li><a href="">甜點</a></li>
+                        <li><a href="">登入</a></li>
+                    </ul>
+                </div>
+                <!--查看購物車-->
+                <div class="shoppingCart">
+                    <img src="./img/icon/shoppingCart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 寄送資訊 -->
+        <div class="desContact">
+            <!-- 寄送標題區 -->
+            <div class="desTitle">
+                <!-- 標題 -->
+                <p>運送</p>
+                <!-- 進度欄 -->
+                <div class="stateArea">
+                    <!-- 進度線 -->
+                    <div class="stateLine">
+                        <!-- 第一個球 -->
+                        <div class="stateCicle-outter">
+                            <div class="stateCircle-inner on"></div>
+                        </div>
+                        <!-- 第二個球 -->
+                        <div class="stateCicle-outter">
+                            <div class="stateCircle-inner"></div>
+                        </div>
+                        <!-- 第三個球 -->
+                        <div class="stateCicle-outter">
+                            <div class="stateCircle-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 寄件人姓名 -->
+            <div clas="desName">
+                <!-- 左區 -->
+                <div class="desNameLeft">
+                    <P>姓氏</P>
+                    <input type="text" class="enterLastName" value="王">
+                </div>
+                <!-- 右區 -->
+                <div class="desNameRight">
+                    <p>名字</p>
+                    <input type="text" class="enterFirstName" value="小明">
+                </div>
+            </div>
+            <!-- 寄件人電話 -->
+            <div class="desPhone">
+                <p>電話</p>
+                <input type="text" class="enterPhone" value="0912-345-678">
+            </div>
+            <!-- 寄送地址 -->
+            <div class="desAddress">
+                <p>地址</p>
+                <input type="text" class="enterCountry" value="高雄市">
+                <input type="text" class="enterTown" value="新興區">
+                <input type="text" class="enterRoad" value="幸福路520號">
+            </div>
+            <!-- 下一步 -->
+            <div class="desNext">
+                <p>下一步</p>
+            </div>
+        </div>
+
+        <!-- 購物車內容 -->
+        <div class="cartDetail">
+            <!-- 訂單摘要 -->
+            <div class="cartSumArea">
+                <!-- 摘要標題 -->
+                <div class="cartSum">
+                    <p>訂單摘要</p>
+                </div>
+                <!-- 摘要項目1 -->
+                <div class="cartSumMoney">
+                    <p>小計</p>
+                    <p>NT$ 2,700</p>
+                </div>
+                <!-- 摘要項目2 -->
+                <div class="cartSumTax">
+                    <p>運費</p>
+                    <p>NT$ 300</p>
+                </div>
+                <!-- 摘要項目3 -->
+                <div class="cartSumTotal">
+                    <p>總計</p>
+                    <p>NT$ 3,000</p>
+                </div>
+            </div>
+
+            <!-- 購物清單 -->
+            <div class="cartListArea">
+                <!-- 清單標題 -->
+                <div class="cartList">
+                    <p>購物清單</p>
+                </div>
+                <!-- 清單內容1 -->
+                <div class="cartListItem">
+                    <img src="" alt="">
+                    <p class="itemName">焦糖馬卡龍(2)</p>
+                    <p class="itemPrice">NT$ 900</p>
+                </div>
+                <!-- 清單內容2 -->
+                <div class="cartListItem">
+                    <img src="" alt="">
+                    <p class="itemName">焦糖馬卡龍(2)</p>
+                    <p class="itemPrice">NT$ 900</p>
+                </div>
+                <!-- 清單內容3 -->
+                <div class="cartListItem">
+                    <img src="" alt="">
+                    <p class="itemName">焦糖馬卡龍(2)</p>
+                    <p class="itemPrice">NT$ 900</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!--信箱列-->
+        <div class="greenFooter">
+            <div class="mailFooter">
+                <!--信箱列LOGO-->
+                <div class="mailLeft">
+                    <img class="mailFooterLogo" src="./img/icon/mailAreaLogo.svg" alt="">
+                    <p>訂閱你我的甜蜜郵件</p>
+                </div>
+                <!--信箱輸入區-->
+                <div class="mailArea">
+                    <div class="inputArea">
+                        <img src="./img/icon/email.png" alt="">
+                        <input type="text" class="input">
+                    </div>
+                    <div class="go">
+                        <img src="./img/icon/arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--聯絡資訊-->
+        <div class="contactFooter">
+            <div class="contact">
+                <!--左半邊-->
+                <div class="contactLeft">
+                    <div class="footerLogo">
+                        <img src="./img/icon/footerLogo.svg" alt="">
+                    </div>
+                    <div class="contactText">
+                        <p>07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                    <div class="socialIcon">
+                        <img src="./img/icon/line.svg" alt="">
+                        <img src="./img/icon/facebook.svg" alt="">
+                    </div>
+                </div>
+                <!--右半邊-->
+                <div class="contactRight">
+                    <div class="contactTitle">
+                        <img src="./img/title/今天是個吃甜點的好日子-直式.svg" alt="">
+                    </div>
+                    <div class="copyright">
+                        <p>© 2018 Sweetaste* All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+</body>
