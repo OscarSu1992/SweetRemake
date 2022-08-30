@@ -42,114 +42,123 @@
         </div>
     </header>
     <main>
-        <!-- 寄送資訊 -->
-        <div class="desContact">
-            <!-- 寄送標題區 -->
-            <div class="desTitle">
-                <!-- 標題 -->
-                <p>運送</p>
-                <!-- 進度欄 -->
-                <div class="stateArea">
-                    <!-- 進度線 -->
-                    <div class="stateLine">
-                        <!-- 第一個球 -->
-                        <div class="stateCicle-outter">
-                            <div class="stateCircle-inner on"></div>
-                        </div>
-                        <!-- 第二個球 -->
-                        <div class="stateCicle-outter">
-                            <div class="stateCircle-inner"></div>
-                        </div>
-                        <!-- 第三個球 -->
-                        <div class="stateCicle-outter">
-                            <div class="stateCircle-inner"></div>
+        <div class="checkoutMain">
+            <!-- 寄送資訊 -->
+            <div class="desContact">
+                <!-- 寄送標題區 -->
+                <div class="desTitle">
+                    <!-- 標題 -->
+                    <p>運送</p>
+                    <!-- 進度欄 -->
+                    <div class="stateArea">
+                        <!-- 進度線 -->
+                        <div class="stateLine">
+                            <!-- 第一個球 -->
+                            <div class="stateCircle-outter1 on-outter">
+                                <div class="stateCircle-inner on-inner"></div>
+                            </div>
+                            <!-- 第二個球 -->
+                            <div class="stateCircle-outter2">
+                                <div class="stateCircle-inner"></div>
+                            </div>
+                            <!-- 第三個球 -->
+                            <div class="stateCircle-outter3">
+                                <div class="stateCircle-inner"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- 寄件人姓名 -->
+                <div class="desName">
+                    <!-- 左區 -->
+                    <div class="desNameLeft">
+                        <P>姓氏</P>
+                        <input type="text" class="enterLastName" value="王">
+                    </div>
+                    <!-- 右區 -->
+                    <div class="desNameRight">
+                        <p>名字</p>
+                        <input type="text" class="enterFirstName" value="小明">
+                    </div>
+                </div>
+                <!-- 寄件人電話 -->
+                <div class="desPhone">
+                    <p>電話</p>
+                    <input type="text" class="enterPhone" value="0912-345-678">
+                </div>
+                <!-- 寄送地址 -->
+                <div class="desAddress">
+                    <p>地址</p>
+                    <div class="desAddressSplit">
+                        <div class="desAddressLeft">
+                            <input type="text" class="enterCountry" value="高雄市">
+                        </div>
+                        <div class="desAddressRight">
+                            <input type="text" class="enterTown" value="新興區">
+                        </div>
+                    </div>
+                    <input type="text" class="enterRoad" value="幸福路520號">
+                </div>
+                <!-- 下一步 -->
+                <div class="desNext">
+                    <p>下一步</p>
+                </div>
             </div>
 
-            <!-- 寄件人姓名 -->
-            <div clas="desName">
-                <!-- 左區 -->
-                <div class="desNameLeft">
-                    <P>姓氏</P>
-                    <input type="text" class="enterLastName" value="王">
+            <!-- 購物車內容 -->
+            <div class="cartDetail">
+                <!-- 訂單摘要 -->
+                <div class="cartSumArea">
+                    <!-- 摘要標題 -->
+                    <div class="cartSum">
+                        <p>訂單摘要</p>
+                    </div>
+                    <!-- 摘要項目1 -->
+                    <div class="cartSumMoney">
+                        <p>小計</p>
+                        <p>NT$ 2,700</p>
+                    </div>
+                    <!-- 摘要項目2 -->
+                    <div class="cartSumTax">
+                        <p>運費</p>
+                        <p>NT$ 300</p>
+                    </div>
+                    <!-- 摘要項目3 -->
+                    <div class="cartSumTotal">
+                        <p>總計</p>
+                        <p>NT$ 3,000</p>
+                    </div>
                 </div>
-                <!-- 右區 -->
-                <div class="desNameRight">
-                    <p>名字</p>
-                    <input type="text" class="enterFirstName" value="小明">
+
+                <!-- 購物清單 -->
+                <div class="cartListArea">
+                    <!-- 清單標題 -->
+                    <div class="cartList">
+                        <p>購物清單</p>
+                    </div>
+                    <!-- 清單內容1 -->
+                    <div class="cartListItem">
+                        <img src="" alt="">
+                        <p class="itemName">焦糖馬卡龍(2)</p>
+                        <p class="itemPrice">NT$ 900</p>
+                    </div>
+                    <!-- 清單內容2 -->
+                    <div class="cartListItem">
+                        <img src="" alt="">
+                        <p class="itemName">焦糖馬卡龍(2)</p>
+                        <p class="itemPrice">NT$ 900</p>
+                    </div>
+                    <!-- 清單內容3 -->
+                    <div class="cartListItem">
+                        <img src="" alt="">
+                        <p class="itemName">焦糖馬卡龍(2)</p>
+                        <p class="itemPrice">NT$ 900</p>
+                    </div>
                 </div>
-            </div>
-            <!-- 寄件人電話 -->
-            <div class="desPhone">
-                <p>電話</p>
-                <input type="text" class="enterPhone" value="0912-345-678">
-            </div>
-            <!-- 寄送地址 -->
-            <div class="desAddress">
-                <p>地址</p>
-                <input type="text" class="enterCountry" value="高雄市">
-                <input type="text" class="enterTown" value="新興區">
-                <input type="text" class="enterRoad" value="幸福路520號">
-            </div>
-            <!-- 下一步 -->
-            <div class="desNext">
-                <p>下一步</p>
             </div>
         </div>
-
-        <!-- 購物車內容 -->
-        <div class="cartDetail">
-            <!-- 訂單摘要 -->
-            <div class="cartSumArea">
-                <!-- 摘要標題 -->
-                <div class="cartSum">
-                    <p>訂單摘要</p>
-                </div>
-                <!-- 摘要項目1 -->
-                <div class="cartSumMoney">
-                    <p>小計</p>
-                    <p>NT$ 2,700</p>
-                </div>
-                <!-- 摘要項目2 -->
-                <div class="cartSumTax">
-                    <p>運費</p>
-                    <p>NT$ 300</p>
-                </div>
-                <!-- 摘要項目3 -->
-                <div class="cartSumTotal">
-                    <p>總計</p>
-                    <p>NT$ 3,000</p>
-                </div>
-            </div>
-
-            <!-- 購物清單 -->
-            <div class="cartListArea">
-                <!-- 清單標題 -->
-                <div class="cartList">
-                    <p>購物清單</p>
-                </div>
-                <!-- 清單內容1 -->
-                <div class="cartListItem">
-                    <img src="" alt="">
-                    <p class="itemName">焦糖馬卡龍(2)</p>
-                    <p class="itemPrice">NT$ 900</p>
-                </div>
-                <!-- 清單內容2 -->
-                <div class="cartListItem">
-                    <img src="" alt="">
-                    <p class="itemName">焦糖馬卡龍(2)</p>
-                    <p class="itemPrice">NT$ 900</p>
-                </div>
-                <!-- 清單內容3 -->
-                <div class="cartListItem">
-                    <img src="" alt="">
-                    <p class="itemName">焦糖馬卡龍(2)</p>
-                    <p class="itemPrice">NT$ 900</p>
-                </div>
-            </div>
-        </div>
+        
     </main>
 
     <footer>
