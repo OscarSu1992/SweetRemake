@@ -64,6 +64,11 @@ a, a:link, a:visited {
     color: #3F5D45;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav ul {
     width: 215px;
     padding-left: 0px;
@@ -582,7 +587,7 @@ a, a:link, a:visited {
 @media(max-width:768px) {
     .greenFooter {
         height: 186px;
-        margin: 34px auto 0 auto;
+        margin: 0px auto 0 auto;
     }
 
     .mailFooter {

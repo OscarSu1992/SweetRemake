@@ -23,6 +23,13 @@ audio,video {
     
 }
 
+@media(max-width:768px) {
+    .checkoutMain {
+        justify-content: center;
+    }
+}
+
+
 .desContact {
     padding: 30px 40px;
     width: 460px;
@@ -188,4 +195,127 @@ input {
 .desNext p {
     color: #3F5D45;
     font-size: 24px;
+}
+
+
+
+.cartDetail {
+    width: 300px;
+    height: 577px;
+    margin-left: 20px;
+}
+
+@media(max-width:768px) {
+    .cartDetail {
+        display: none;
+    }
+}
+
+.cartSumArea {
+    width: 300px;
+    height: 193px;
+    margin-bottom: 20px;
+}
+
+.cartSum {
+    width: 300px;
+    height: 65px;
+    background: #EAF0ED;
+    text-align: center;
+    line-height: 65px;
+}
+
+.cartSum p {
+    font-size: 24px;
+    color: #8DA291;;
+}
+
+.cartSumItem {
+    padding: 16px 20px;
+    box-sizing: border-box;
+    border: 1px solid #EAF0ED;
+    height: 128px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartSumMoney {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #8DA291;
+
+}
+
+.cartSumTax {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #8DA291;
+}
+
+.cartSumTotal {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #8DA291;
+}
+
+.cartListArea {
+    width: 300px;
+    height: 337px;
+}
+
+.cartList {
+    width: 300px;
+    height: 65px;
+    background: #EAF0ED;
+    text-align: center;
+    line-height: 65px;
+}
+
+.cartList p {
+    font-size: 24px;
+    color: #8DA291;;
+}
+
+.cartListItem {
+    padding: 16px 20px;
+    box-sizing: border-box;
+    border: 1px solid #EAF0ED;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartListPic {
+    width: 262px;
+    height: 80px;
+    position: relative;
+}
+
+.cartListPic img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    float: left;
+}
+
+.itemName {
+    font-size: 16px;
+    color: #8DA291;
+    position: absolute;
+    top: 16px;
+    left: 140px;
+}
+
+.itemPrice {
+    font-size: 20px;
+    color: #8DA291;
+    position: absolute;
+    top: 40px;
+    left: 140px;
 }
