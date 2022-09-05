@@ -556,6 +556,8 @@ a, a:link, a:visited {
     height: 116px;
     background: #3F5D45;
     margin-top: 60px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .mailFooter {
@@ -591,13 +593,14 @@ a, a:link, a:visited {
     }
 
     .mailFooter {
-        width: unset;
+        width: 100%;
         flex-direction: column;
         margin: 0 auto;
     }
 
     .mailLeft {
-        margin: 30px auto;   
+        margin: 0;
+        justify-content: center;
     }
 }
 
@@ -647,7 +650,20 @@ a, a:link, a:visited {
 /*結尾綠標區-右半邊 768*/
 @media(max-width:768px) {
     .mailArea {
+       position: relative;
        margin: 0 auto;
+       top: 30px;
+       width:unset;
+       max-width: 380px;
+       
+    }
+
+    .inputArea {
+        width: 100%;
+    }
+
+    .inputArea input {
+        width: 100%;
     }
 }
 
