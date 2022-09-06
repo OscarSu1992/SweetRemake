@@ -23,7 +23,7 @@ audio,video {
     
 }
 
-@media(max-width:768px) {
+@media(max-width:900px) {
     .checkoutMain {
         justify-content: center;
     }
@@ -117,7 +117,7 @@ audio,video {
     border: 1px solid #EAF0ED;
 }
 
-@media (max-width:768px) {
+@media (max-width:350px) {
     .stateArea {
         width: 100px;
     }
@@ -252,7 +252,7 @@ input {
     margin-left: 20px;
 }
 
-@media(max-width:768px) {
+@media(max-width:900px) {
     .cartDetail {
         display: none;
     }

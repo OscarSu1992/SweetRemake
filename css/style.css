@@ -26,7 +26,7 @@
 }
  
 /*標題列 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .header {
         max-width: 375px;
         padding: 30px 30px 30px 30px;
@@ -90,7 +90,7 @@ a, a:link, a:visited {
 }
 
 /*標題選單 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .nav {
         display: none;
     }
@@ -102,8 +102,8 @@ a, a:link, a:visited {
 
 /*主視覺 1024*/
 .mainVisual {
-    margin: 0 auto;
-    width: 940px;
+    overflow: hidden;  
+    width: 100%;
     height: 496px;
 }
 
@@ -111,10 +111,13 @@ a, a:link, a:visited {
     width: 940px;
     height: 496px;
     object-fit: cover;
+    display: block;
+    margin:  auto;
+    overflow: hidden;    
 }
 
 /*主視覺 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .mainVisual {
         margin: 0 auto;
         width: 375px;
@@ -160,7 +163,7 @@ a, a:link, a:visited {
 }
 
 /*主視覺區商品分類 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .mainSorting {
         position: static;
         margin: auto;
@@ -180,7 +183,6 @@ a, a:link, a:visited {
 .blurCover {
     width: 260px;
     height: 256px;
-    
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -197,7 +199,7 @@ a, a:link, a:visited {
 }
 
 /*主視覺商品分類-模糊效果與文字 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .blurCover {
         width: 124px;
         height: 180px;
@@ -223,7 +225,7 @@ a, a:link, a:visited {
 }
 
 /*主視覺商品分類-當前頁面 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .active {
         height: 180px;
         font: normal normal 600 20px/124px PingFang TC;
@@ -245,7 +247,7 @@ a, a:link, a:visited {
     margin: 0 auto;
     padding-left: 42px;
     padding-right: 42px;
-    width: 1024px;
+    width: 100%;
     height: 420px;
 }
 
@@ -263,7 +265,7 @@ a, a:link, a:visited {
     object-fit: cover;
 }
 
-@media(max-width:768px) {
+@media(max-width:900px) {
     .sectionStyle {
         margin: auto;
         height: 562px;
@@ -307,7 +309,7 @@ a, a:link, a:visited {
 .sectionText1 {
     font: normal normal 300 16px/16px PingFang TC;
     color: #8DA291;
-    margin: 70px 80px 70px 55px;
+    margin: 70px auto 70px auto;
     width: 256px;
     height: 280px;
     writing-mode: vertical-rl;
@@ -321,7 +323,7 @@ a, a:link, a:visited {
 }
 
 /*段落1_768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .sectionTitle1_768 {
         display: block;
         width: 196px;
@@ -359,7 +361,7 @@ a, a:link, a:visited {
 .sectionText2 {
     font: normal normal 300 16px/16px PingFang TC;
     color: #8DA291;
-    margin: 65px 80px 75px 13px;
+    margin: 65px auto 75px auto;
     width: 256px;
     height: 280px;
     writing-mode: vertical-rl;
@@ -374,7 +376,7 @@ a, a:link, a:visited {
 }
 
 /*段落2_768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .sectionTitle2_768 {
         display: block;
         width: 196px;
@@ -414,7 +416,7 @@ a, a:link, a:visited {
 }
 
 /*段落3_768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .section3 {
         height: 120px;
     }
@@ -436,10 +438,11 @@ a, a:link, a:visited {
 /*本日精選區 1024*/
 .todayPop {
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
     height: 434px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .todayPopGroup {
@@ -531,9 +534,9 @@ a, a:link, a:visited {
 }
 
 /*本日精選區 1024*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .todayPop {
-        margin: 0 auto;
+        margin: 5px auto;
         width: unset;
     }
 
@@ -586,7 +589,7 @@ a, a:link, a:visited {
 }
 
 /*結尾綠標區-左半邊 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .greenFooter {
         height: 186px;
         margin: 0px auto 0 auto;
@@ -606,7 +609,7 @@ a, a:link, a:visited {
 
 /*結尾綠標區-右半邊 1024*/
 .mailArea {
-    margin: auto auto auto 122px;
+    margin: auto;
     display: flex;
     width: 380px;
     height: 56px;
@@ -648,7 +651,7 @@ a, a:link, a:visited {
 }
 
 /*結尾綠標區-右半邊 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .mailArea {
        position: relative;
        margin: 0 auto;
@@ -685,7 +688,7 @@ a, a:link, a:visited {
 }
 
 /*聯絡資訊 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .contact {
         width: unset;
         padding: unset;
@@ -726,7 +729,7 @@ a, a:link, a:visited {
 }
 
 /*聯絡資訊-左半邊 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .contact {
         flex-direction: column;
     }
@@ -769,7 +772,7 @@ a, a:link, a:visited {
 }
 
 /*聯絡資訊-右半邊 768*/
-@media(max-width:768px) {
+@media(max-width:900px) {
     .contactTitle {
         display: none;
     }
